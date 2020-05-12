@@ -4,7 +4,7 @@ class String
 
   def sentence?
     self.split(" ").each do |words|
-      if words.split("").include?(".")
+      words.each do 
         true 
       else 
         false
