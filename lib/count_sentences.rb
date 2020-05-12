@@ -6,10 +6,6 @@ class String
     self.split(" ").each do |words|
       words.split("").any? do |letters|
         if letters == "."
-          return true 
-        else 
-          return false 
-        end 
       end 
     end 
   end
