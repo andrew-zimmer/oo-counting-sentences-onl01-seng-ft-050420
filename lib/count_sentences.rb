@@ -4,11 +4,8 @@ class String
 
   def sentence?
     self.split(" ").each do |words|
-      words.each do 
-        true 
-      else 
-        false
-      end 
+      words.split("").any? do |letters|
+        letters == "."
     end 
   end
 
