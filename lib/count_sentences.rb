@@ -13,7 +13,7 @@ class String
   end
 
   def exclamation?
-
+    self.split(" ").any? {|words| words.end_with?("!")}
   end
 
   def count_sentences
