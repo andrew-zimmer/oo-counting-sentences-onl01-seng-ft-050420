@@ -4,7 +4,7 @@ class String
 
   def sentence?
     self.split(" ").each do |words|
-      words.split("").any? do |letters|
+      words.split("").each do |letters|
         if letters == "."
           return true 
         else 
