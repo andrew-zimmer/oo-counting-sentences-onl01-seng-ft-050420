@@ -3,9 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    self.split(" ").any? do |words|
-      words.end_with?(".")
-    end 
+    self.split(" ").any?{|words|words.end_with?(".")}
   end
 
   def question?
