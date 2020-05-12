@@ -3,7 +3,13 @@ require 'pry'
 class String
 
   def sentence?
-    
+    self.split(" ").each do |words|
+      if words.split("").include(".")
+        true 
+      else 
+        false
+      end 
+    end 
   end
 
   def question?
