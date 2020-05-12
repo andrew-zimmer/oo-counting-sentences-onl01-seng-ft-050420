@@ -15,8 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(" ").any? do |words|
-      words.end_with?(".", "!", "?").count
-    end 
+    self.split(".","!","?").count
   end
 end
