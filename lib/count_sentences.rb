@@ -5,7 +5,11 @@ class String
   def sentence?
     self.split(" ").each do |words|
       words.split("").any? do |letters|
-        letters == "."
+        if letters == "."
+          return true 
+        else 
+          return false 
+        end 
       end 
     end 
   end
