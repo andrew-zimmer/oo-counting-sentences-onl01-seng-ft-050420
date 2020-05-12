@@ -5,7 +5,7 @@ class String
   def sentence?
     self.split(" ").each do |words|
       words.split("").any? do |letters|
-        if letters == "."
+        letters == "."
       end 
     end 
   end
