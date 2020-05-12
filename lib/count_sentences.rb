@@ -4,9 +4,7 @@ class String
 
   def sentence?
     self.split(" ").any? do |words|
-      words.split("").flatten.any? do |letters|
-        letters == "."
-      end 
+      words.end_with?(".")
     end 
   end
 
