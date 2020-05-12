@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    self.split(" ").select do |words|
+    self.split(" ").any? do |words|
       words.split("").flatten.any? do |letters|
         letters == "."
       end 
