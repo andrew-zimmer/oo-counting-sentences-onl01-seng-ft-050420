@@ -9,7 +9,7 @@ class String
   end
 
   def question?
-
+    self.split(" ").any? { |words| words.end_with?("?")
   end
 
   def exclamation?
