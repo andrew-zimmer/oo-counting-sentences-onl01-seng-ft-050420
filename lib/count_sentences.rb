@@ -6,6 +6,7 @@ class String
     self.split(" ").each do |words|
       words.split("").any? do |letters|
         letters == "."
+      end 
     end 
   end
 
